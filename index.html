@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Energy. Smarter Choice. | Appliance Energy Consumption</title>
+  <meta name="description" content="Understand how much Australian televisions cost to run, using GEMS energy rating data and an interactive running-cost calculator.">
+  <link rel="icon" type="image/png" href="assets/img/power-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="Appliance Energy Consumption, home">
+        <img src="assets/img/power-icon.png" alt="" width="30" height="30">
+        <span>Appliance Energy</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="televisions.html">Televisions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="eyebrow">Australian TV energy data</p>
+          <h1 class="h-display">Smart Energy.<br><span class="accent-ink">Smarter Choice.</span></h1>
+          <p class="lede">See what Australian TVs really cost to run, from labelled kWh per year to your own electricity bill.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="televisions.html">Explore Televisions Data <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn--text" href="televisions.html#calculator">Try the calculator</a>
+          </div>
+        </div>
+
+        <aside class="spread" aria-label="Spread between the lowest and highest brand averages">
+          <div>
+            <p class="spread__label">Brand average, kWh per year</p>
+            <p class="spread__big">15<small>&times;</small></p>
+            <p class="spread__copy">Gap between the most frugal and the hungriest brand average in the dataset.</p>
+          </div>
+          <div class="range">
+            <div class="range__track" role="img" aria-label="Scale from about 53 to about 823 kilowatt-hours per year">
+              <span class="range__dot" style="left: 0%"></span>
+              <span class="range__dot" style="left: 100%"></span>
+            </div>
+            <div class="range__legend">
+              <div><strong>~53</strong>lowest brand</div>
+              <div><strong>~823</strong>highest brand</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Energy highlights (bento) -->
+    <section class="section section--tint" aria-labelledby="highlights-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Energy highlights</p>
+          <h2 class="h-section" id="highlights-title">Three numbers worth knowing.</h2>
+        </div>
+
+        <div class="bento">
+          <article class="tile tile--a reveal" style="--i:0">
+            <div>
+              <p class="tile__kicker">Average annual consumption</p>
+              <p class="tile__num">462<small>kWh / year</small></p>
+            </div>
+            <p>Mean labelled energy use of TVs with an internal power supply in the GEMS dataset. External power supply models average about 100 kWh.</p>
+          </article>
+
+          <article class="tile tile--b reveal" style="--i:1">
+            <p class="tile__kicker">Energy Star ratings</p>
+            <h3>More stars, less energy.</h3>
+            <p>The star label compares a TV with others of similar screen size, so use it to pick between sets of the same size.</p>
+            <div class="stars" role="img" aria-label="Example rating: four of five segments filled">
+              <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span>
+            </div>
+          </article>
+
+          <article class="tile tile--c reveal" style="--i:2">
+            <p class="tile__kicker">Financial benefit</p>
+            <h3>About $139 vs $30 a year.</h3>
+            <p>At 30 c/kWh, a 462 kWh TV costs around $139 to run each year. A 100 kWh set costs around $30.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="h-section" id="faq-title">Questions, answered simply.</h2>
+        </div>
+
+        <div class="faq" data-faq>
+          <div class="faq__item reveal" style="--i:0">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+              How is the kWh per year on the label calculated?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <p>It is based on a standardised daily viewing assumption defined in the rating standard. Your own habits may be higher or lower, which is why the calculator lets you enter real hours.</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal" style="--i:1">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+              What does the star rating actually tell me?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <p>It shows how efficient a TV is for its screen size. More stars means less energy for the same size, so compare sets of similar size rather than across sizes.</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal" style="--i:2">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+              Why do brand averages differ so much?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <p>A brand average mixes every model that brand registered, so screen size and product range matter. A brand selling mostly large TVs will average higher than one selling small ones.</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal" style="--i:3">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+              How do I work out what my TV costs to run?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <p>Multiply watts by daily hours, divide by 1000 for kWh per day, then multiply by 365 and your price per kWh. The <a href="televisions.html#calculator">TV calculator</a> does this for you.</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal" style="--i:4">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+              Where does the data come from?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              <p>The charts use the GEMS television dataset (Greenhouse and Energy Minimum Standards), analysed and exported from KNIME. See the <a href="about.html">About page</a> for details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>&copy; <span data-year>2026</span> Pham Huy Phuc. Swinburne University of Technology.</p>
+      <p class="footer__ai">Generative AI acknowledgement: AI assisted with the JavaScript. All other work is my own.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

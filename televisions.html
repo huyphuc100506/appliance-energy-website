@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decoding Television Energy Efficiency | Appliance Energy Consumption</title>
+  <meta name="description" content="A data story on Australian television energy use by brand and power supply, plus a calculator for your own running costs.">
+  <link rel="icon" type="image/png" href="assets/img/power-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="Appliance Energy Consumption, home">
+        <img src="assets/img/power-icon.png" alt="" width="30" height="30">
+        <span>Appliance Energy</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="televisions.html" aria-current="page">Televisions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Data story -->
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Data story</p>
+        <h1 class="h-display">Decoding Television<br>Energy Efficiency</h1>
+        <p class="lede">Four charts from the GEMS television dataset show how much power sets draw, and what separates the thrifty from the thirsty.</p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="figures reveal">
+        <div class="figure-stat"><b>~53<small>kWh/yr</small></b><span>Lowest brand average (ARK)</span></div>
+        <div class="figure-stat"><b>~823<small>kWh/yr</small></b><span>Highest brand average in the dataset</span></div>
+        <div class="figure-stat"><b>~100<small>kWh/yr</small></b><span>Average for external power supply (EPS) models</span></div>
+        <div class="figure-stat"><b>~462<small>kWh/yr</small></b><span>Average for internal power supply models</span></div>
+      </div>
+    </div>
+
+    <section class="wrap" aria-label="Data story chapters">
+      <!-- Chapter 1 -->
+      <article class="chapter">
+        <div class="chapter__grid">
+          <div class="chapter__text reveal">
+            <p class="chapter__num">01 &middot; The spread</p>
+            <h2>Brand averages run from about 53 to 823 kWh a year.</h2>
+            <p>Across roughly a hundred brands, the average climbs steadily, then jumps at the end. Most sit below 400 kWh, but the top few pass <strong>600 kWh</strong>.</p>
+          </div>
+          <figure class="chart-card reveal" style="--i:1">
+            <img src="assets/img/charts/brand-power-all-brands.png" width="1400" height="1022" loading="lazy"
+                 alt="Bar chart of mean labelled energy consumption in kWh per year for every brand, sorted from about 53 up to about 823.">
+            <figcaption>Mean labelled energy consumption (kWh/year) by brand, all brands.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Chapter 2 -->
+      <article class="chapter chapter--flip">
+        <div class="chapter__grid">
+          <div class="chapter__text reveal">
+            <p class="chapter__num">02 &middot; The brands you know</p>
+            <h2>Popular brands average roughly 290 to 600 kWh.</h2>
+            <p>Household names cluster in the middle and upper range. Even the lowest popular brand average is more than <strong>three times</strong> the 90 kWh ceiling of the frugal top 10 below.</p>
+          </div>
+          <figure class="chart-card reveal" style="--i:1">
+            <img src="assets/img/charts/popular-brands.png" width="1400" height="1022" loading="lazy"
+                 alt="Bar chart of mean labelled energy consumption for popular brands, rising from about 290 to about 600 kWh per year.">
+            <figcaption>Mean labelled energy consumption (kWh/year), popular brands.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Chapter 3 -->
+      <article class="chapter">
+        <div class="chapter__grid">
+          <div class="chapter__text reveal">
+            <p class="chapter__num">03 &middot; Power supply type</p>
+            <h2>External power supply models use about a quarter of the energy.</h2>
+            <p>EPS models average near <strong>100 kWh</strong> a year, against about <strong>462 kWh</strong> for internal power supply sets. EPS units are often compact, so size likely plays a part.</p>
+          </div>
+          <figure class="chart-card reveal" style="--i:1">
+            <img src="assets/img/charts/power-supply-type.png" width="1400" height="1022" loading="lazy"
+                 alt="Bar chart comparing average labelled energy consumption: EPS about 100 kWh per year, internal power supply about 462.">
+            <figcaption>Average labelled energy consumption (kWh/year) by power supply type.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Chapter 4 -->
+      <article class="chapter chapter--flip">
+        <div class="chapter__grid">
+          <div class="chapter__text reveal">
+            <p class="chapter__num">04 &middot; The top 10</p>
+            <h2>The ten lowest brand averages all sit at or below 90 kWh.</h2>
+            <p>ARK leads at about 53 kWh a year, with RCA the tenth at about 90. Values are read from the chart, so treat them as approximate.</p>
+            <ol class="rank" aria-label="Ten brands with the lowest average consumption, approximate kWh per year">
+              <li><span class="pos">1</span><span class="name">ARK</span><span class="bar"><i style="--w:59%"></i></span><span class="val">~53</span></li>
+              <li><span class="pos">2</span><span class="name">TENET</span><span class="bar"><i style="--w:61%"></i></span><span class="val">~55</span></li>
+              <li><span class="pos">3</span><span class="name">LSP TV</span><span class="bar"><i style="--w:67%"></i></span><span class="val">~60</span></li>
+              <li><span class="pos">4</span><span class="name">Stan Cash</span><span class="bar"><i style="--w:67%"></i></span><span class="val">~60</span></li>
+              <li><span class="pos">5</span><span class="name">WINTAL</span><span class="bar"><i style="--w:80%"></i></span><span class="val">~72</span></li>
+              <li><span class="pos">6</span><span class="name">Dynalink</span><span class="bar"><i style="--w:84%"></i></span><span class="val">~76</span></li>
+              <li><span class="pos">7</span><span class="name">Yokohama</span><span class="bar"><i style="--w:84%"></i></span><span class="val">~76</span></li>
+              <li><span class="pos">8</span><span class="name">Altius</span><span class="bar"><i style="--w:88%"></i></span><span class="val">~79</span></li>
+              <li><span class="pos">9</span><span class="name">Sphere</span><span class="bar"><i style="--w:95%"></i></span><span class="val">~85</span></li>
+              <li><span class="pos">10</span><span class="name">RCA</span><span class="bar"><i style="--w:100%"></i></span><span class="val">~90</span></li>
+            </ol>
+          </div>
+          <figure class="chart-card reveal" style="--i:1">
+            <img src="assets/img/charts/top-10-lowest-power.png" width="1400" height="1022" loading="lazy"
+                 alt="Bar chart of the ten brands with the lowest average energy consumption, from ARK at about 53 to RCA at about 90 kWh per year.">
+            <figcaption>Top 10 brands by lowest mean labelled energy consumption (kWh/year).</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <p class="data-note">Charts were exported from KNIME. Brand averages mix models of different sizes, so use them as a guide, not a like-for-like comparison.</p>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section section--tint" id="calculator" aria-labelledby="calc-title" style="margin-top: clamp(48px, 7vw, 96px)">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Energy calculator</p>
+          <h2 class="h-section" id="calc-title">What does your TV cost to run?</h2>
+          <p class="lede">Pick a TV profile or enter your own wattage, then set your daily hours and electricity price.</p>
+        </div>
+
+        <div class="calc reveal">
+          <form class="calc__form" id="calc-form" novalidate>
+            <div class="field">
+              <label for="appliance">TV profile</label>
+              <select class="select" id="appliance" name="appliance">
+                <option value="40">32" LED TV &ndash; 40 W</option>
+                <option value="60">43" LED TV &ndash; 60 W</option>
+                <option value="100" selected>55" TV &ndash; 100 W</option>
+                <option value="150">65" OLED TV &ndash; 150 W</option>
+                <option value="200">75" QLED TV &ndash; 200 W</option>
+                <option value="custom">Custom wattage&hellip;</option>
+              </select>
+            </div>
+
+            <div class="field field--custom" id="custom-field" hidden>
+              <label for="wattage">Custom wattage</label>
+              <div class="unit-input">
+                <input class="input" type="number" id="wattage" name="wattage" inputmode="decimal" min="1" max="2000" step="any" placeholder="e.g. 120" aria-describedby="wattage-help wattage-error">
+                <span aria-hidden="true">W</span>
+              </div>
+              <p class="help" id="wattage-help">Find this on the back of your TV or in its manual.</p>
+              <p class="error" id="wattage-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="hours">Daily usage</label>
+              <div class="hours">
+                <input type="range" id="hours-range" min="1" max="24" step="1" value="5" aria-label="Daily usage hours slider">
+                <div class="unit-input">
+                  <input class="input" type="number" id="hours" name="hours" inputmode="decimal" min="1" max="24" step="any" value="5" aria-describedby="hours-error">
+                  <span aria-hidden="true">h</span>
+                </div>
+              </div>
+              <p class="error" id="hours-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="rate">Electricity price</label>
+              <div class="unit-input">
+                <input class="input" type="number" id="rate" name="rate" inputmode="decimal" min="0.01" step="any" value="30" aria-describedby="rate-help rate-error">
+                <span aria-hidden="true">c/kWh</span>
+              </div>
+              <p class="help" id="rate-help">Default is 30 c/kWh, a typical Australian average. Check your bill for your own rate.</p>
+              <p class="error" id="rate-error" role="alert"></p>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Calculate</button>
+          </form>
+
+          <div class="calc__result is-empty" id="calc-result" aria-live="polite">
+            <div>
+              <p class="result__empty">Enter valid values to see your running costs.</p>
+              <div class="result__filled">
+                <p class="result__label">Estimated annual cost</p>
+                <p class="result__main" id="out-cost">$0.00<small>/ year</small></p>
+              </div>
+            </div>
+            <div class="result__filled">
+              <div class="result__row">
+                <div class="result__box"><b id="out-day">0<small>kWh</small></b><span>per day</span></div>
+                <div class="result__box"><b id="out-year">0<small>kWh</small></b><span>per year</span></div>
+              </div>
+            </div>
+            <p class="result__formula">
+              <code>kWh/day = W &times; hours &divide; 1000</code><br>
+              <code>kWh/year = kWh/day &times; 365</code><br>
+              <code>Cost = kWh/year &times; cents &divide; 100</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>&copy; <span data-year>2026</span> Pham Huy Phuc. Swinburne University of Technology.</p>
+      <p class="footer__ai">Generative AI acknowledgement: AI assisted with the JavaScript. All other work is my own.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

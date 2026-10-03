@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Appliance Energy Consumption</title>
+  <meta name="description" content="About the Appliance Energy Consumption project: scope, author, audience, data and generative AI declaration.">
+  <link rel="icon" type="image/png" href="assets/img/power-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="Appliance Energy Consumption, home">
+        <img src="assets/img/power-icon.png" alt="" width="30" height="30">
+        <span>Appliance Energy</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="televisions.html">Televisions</a></li>
+          <li><a href="about.html" aria-current="page">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">About us</p>
+        <h1 class="h-display">Built to make<br>energy data clear.</h1>
+        <p class="lede">A COS30045 Data Visualization project turning GEMS television data into a simple guide for Australian households, created by one student.</p>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-bottom: clamp(64px, 9vw, 120px)">
+      <div class="about-grid">
+        <article class="panel reveal">
+          <h2>About the project</h2>
+          <p>This site presents a data story on television energy use in Australia and a calculator that turns wattage into a yearly running cost.</p>
+          <p>It was created for <strong>COS30045 Data Visualization</strong> at Swinburne University of Technology. The unit is about turning data into clear, honest visuals, and this project applies that to the GEMS television dataset.</p>
+          <ul>
+            <li>Analysis and charts: built in KNIME and exported as images.</li>
+            <li>Data story: four charts explain how energy use varies by brand and power supply.</li>
+            <li>Web delivery: a three-page site in HTML, CSS and JavaScript with an interactive calculator.</li>
+          </ul>
+        </article>
+
+        <article class="panel reveal" style="--i:1">
+          <h2>Audience</h2>
+          <p>Australian households, appliance shoppers and cost- or environment-conscious consumers.</p>
+          <p>They prefer short summaries, transparent data and simple interactions on both desktop and mobile.</p>
+        </article>
+
+        <article class="panel panel--wide reveal">
+          <h2>Author</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">Name</th><th scope="col">Student ID</th><th scope="col">Role</th></tr></thead>
+              <tbody>
+                <tr><td>Pham Huy Phuc</td><td>105715493</td><td>Sole author: design, data analysis and development</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel reveal">
+          <h2>Data overview</h2>
+          <ul>
+            <li>Source: GEMS (Greenhouse and Energy Minimum Standards) television registrations.</li>
+            <li>Measure: labelled energy consumption in kWh per year.</li>
+            <li>Analysis and charts: KNIME, exported as images.</li>
+            <li>Brand averages mix models of different sizes.</li>
+          </ul>
+        </article>
+
+        <article class="panel reveal" style="--i:1">
+          <h2>Ethics</h2>
+          <ul>
+            <li>Only aggregated product data is shown, with no personal information.</li>
+            <li>Calculator inputs stay in your browser and are never sent anywhere.</li>
+            <li>Costs are estimates based on the price and hours you enter.</li>
+          </ul>
+        </article>
+
+        <article class="panel panel--dark panel--wide reveal" id="ai-declaration">
+          <h2>Generative AI declaration</h2>
+          <p>Generative AI assisted me with the JavaScript portion of this site, which covers the FAQ accordion and the energy calculator.</p>
+          <p>All other work is my own, including the design, data analysis and written content.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>&copy; <span data-year>2026</span> Pham Huy Phuc. Swinburne University of Technology.</p>
+      <p class="footer__ai">Generative AI acknowledgement: AI assisted with the JavaScript. All other work is my own.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
