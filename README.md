@@ -28,9 +28,9 @@ Values are read from the charts and are approximate. Brand averages mix models o
 Australian households, appliance shoppers and cost- or environment-conscious consumers who prefer
 minimalism, concise summaries, transparent data and smooth desktop/mobile use.
 
-## Data source
-GEMS (Greenhouse and Energy Minimum Standards) television registration data, analysed in KNIME.
-[Add dataset name, URL and access date.]
+## Data Source
+Australian Government – Energy Rating Data for household appliances – Labelled Products (Televisions)
+Source: https://data.gov.au/data/dataset/559708e5-480e-4f94-8429-c49571e82761/resource/93a615e5-935e-4713-a4b0-379e3f6dedc9/download/tv_2026_09_30.csv
 
 ## Ethics
 Only aggregated product data is shown. The calculator runs entirely in the browser; nothing is stored or sent.
